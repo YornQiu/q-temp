@@ -12,7 +12,7 @@ node >= 8.9
 `npm i q-temp -g`
 
 创建项目  
-`qt create preject-name`
+`qt create <preject-name>`
 
 指定git库地址  
 `qt create <peoject-name> -u <url>`
