@@ -1,0 +1,36 @@
+{
+  "name": "q-temp",
+  "version": "1.0.1",
+  "description": "前端模板拉取工具",
+  "author": "yogurtq",
+  "license": "MIT",
+  "bin": {
+    "qt": "./bin/main.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=8.9"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^4.0.0",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.5",
+    "inquirer": "^7.0.0",
+    "minimist": "^1.2.5",
+    "ora": "^4.0.2",
+    "shelljs": "^0.8.4",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yogurtq/q-temp.git",
+    "directory": "packages/q-temp"
+  }
+}
