@@ -26,7 +26,9 @@ program
 program
   .command('config')
   .description('set configurations')
-  .option('-u, --url <address>', 'set repository url')
+  .option('-a, --add <name> <address>', 'add url')
+  .option('-d, --delete <name>', 'delete url by name')
+  .option('-u, --update <name> <address>', 'update url by name')
   .action((cmd) => {
     require('../lib/config')(cleanArgs(cmd))
   })
