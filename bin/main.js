@@ -5,8 +5,9 @@ const chalk = require('chalk')
 const minimist = require('minimist')
 
 program
+  .name('qt')
   .version(`version ${require('../package').version}`, '-v, --version')
-  .usage('<command> [options]')
+  .usage('<command>')
 
 program
   .command('create <project-name>')
@@ -24,7 +25,7 @@ program
 
 program
   .command('config')
-  .description('set congfigurations')
+  .description('set configurations')
   .option('-u, --url <address>', 'set repository url')
   .action((cmd) => {
     require('../lib/config')(cleanArgs(cmd))
