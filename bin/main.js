@@ -12,9 +12,10 @@ program
 program
   .command('create <project-name>')
   .description('create a new project from a template repository default or you provided')
-  .option('-u, --url <address>', 'Provide a repository url')
-  .option('-f, --force', 'Overwrite target directory if it exists')
-  .option('-m, --merge', 'Merge target directory if it exists')
+  .option('-u, --url <address>', 'provide a repository url')
+  .option('-r, --rep <name>', 'provide a repository name from config')
+  .option('-f, --force', 'overwrite target directory if it exists')
+  .option('-m, --merge', 'merge target directory if it exists')
   .action((name, cmd) => {
     if (minimist(process.argv.slice(3))._.length > 1) {
       console.log(chalk.yellow('\n Info: You provided more than one argument. The first one will be used as the app\'s name, the rest are ignored.'))
@@ -24,13 +25,14 @@ program
   })
 
 program
-  .command('config')
-  .description('set configurations')
-  .option('-a, --add <name> <address>', 'add url')
-  .option('-d, --delete <name>', 'delete url by name')
-  .option('-u, --update <name> <address>', 'update url by name')
-  .action((cmd) => {
-    require('../lib/config')(cleanArgs(cmd))
+  .command('rep [value]')
+  .usage('[value] [options]')
+  .description('set repository')
+  .option('-a, --add <name> <address>', 'add a repository')
+  .option('-d, --delete <name>', 'delete repository by name')
+  .option('-u, --update <name> <address>', 'update repository by name')
+  .action((value, cmd) => {
+    require('../lib/repository')(value, cleanArgs(cmd))
   })
 
 // output help information on unknown commands
