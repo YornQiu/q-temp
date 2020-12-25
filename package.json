@@ -1,14 +1,11 @@
 {
   "name": "q-temp",
   "version": "1.1.1",
-  "description": "前端模板拉取工具",
+  "description": "Pull a template project into local via GIT",
   "author": "yogurtq",
   "license": "MIT",
   "bin": {
     "qt": "./bin/main.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "vue",
@@ -32,5 +29,8 @@
     "type": "git",
     "url": "git+https://github.com/yogurtq/q-temp.git",
     "directory": "packages/q-temp"
+  },
+  "bugs": {
+    "url": "https://github.com/yogurtq/q-temp/issues"
   }
 }

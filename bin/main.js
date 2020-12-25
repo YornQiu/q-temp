@@ -11,6 +11,7 @@ program
 
 program
   .command('create <project-name>')
+  .usage('<project-name> [options]')
   .description('create a new project from a template repository default or you provided')
   .option('-u, --url <address>', 'provide a repository url')
   .option('-r, --rep <name>', 'provide a repository name from config')
@@ -26,7 +27,7 @@ program
 
 program
   .command('rep [value]')
-  .usage('[value] [options]')
+  .usage('[options] [value]')
   .description('set repository')
   .option('-a, --add <name> <address>', 'add a repository')
   .option('-d, --delete <name>', 'delete repository by name')

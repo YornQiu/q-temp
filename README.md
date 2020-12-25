@@ -45,7 +45,7 @@ eg: `qt rep -a vue-template https://github.com/yogurtq/vue-template.git`
 qt rep -d <name>
 ```
 
-+ 更改仓库
++ 更改仓库  
 更改指定名称的仓库的地址
 ```
 qt rep -u <name> <address>
