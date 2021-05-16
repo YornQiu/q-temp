@@ -15,7 +15,7 @@ program
   .usage('<project-name> [options]')
   .description('create a new project from a template repository default or you provided')
   .option('-u, --url <address>', 'provide a repository url')
-  .option('-r, --rep <name>', 'provide a repository name from config')
+  .option('-r, --repo <name>', 'provide a repository name from config')
   .option('-f, --force', 'overwrite target directory if it exists')
   .option('-m, --merge', 'merge target directory if it exists')
   .action((name, cmd) => {
@@ -27,7 +27,7 @@ program
   })
 
 program
-  .command('rep [value]')
+  .command('repo [value]')
   .usage('[options] [value]')
   .description('set repository')
   .option('-a, --add <name> <address>', 'add a repository')
