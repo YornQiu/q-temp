@@ -2,7 +2,7 @@
   "name": "q-temp",
   "version": "1.1.1",
   "description": "Pull a template project into local via GIT",
-  "author": "yogurtq",
+  "author": "YogurtQ",
   "license": "MIT",
   "bin": {
     "qt": "./bin/main.js"
