@@ -30,25 +30,25 @@ qt create <peoject-name> -u <url>
 qt create <project-name> -r <repository-name>
 ```
 
-#### 3. 命令：qt rep
+#### 3. 命令：qt repo
 + 添加仓库  
-将该地址保存到配置文件中并命名，后续即可通过 `qt create` 命令使用该地址快速创建项目  
+将该地址保存到配置文件中并命名，后续即可通过 `qt create <project-name> -r <repository-name>` 命令使用该地址快速创建项目  
 ```
-qt rep -a <name> <address>
+qt repo -a <name> <address>
 ```  
-eg: `qt rep -a vue-template https://github.com/yogurtq/vue-template.git`  
+eg: `qt repo -a vue-template https://github.com/yogurtq/vue-template.git`  
 
 
 + 删除仓库  
 删除指定名称的仓库  
 ```
-qt rep -d <name>
+qt repo -d <name>
 ```
 
 + 更改仓库  
 更改指定名称的仓库的地址
 ```
-qt rep -u <name> <address>
+qt repo -u <name> <address>
 ```
 
 
