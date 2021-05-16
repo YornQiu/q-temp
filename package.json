@@ -1,6 +1,6 @@
 {
   "name": "q-temp",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Pull a template project into local via GIT",
   "author": "YogurtQ",
   "license": "MIT",
