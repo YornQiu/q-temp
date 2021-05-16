@@ -3,6 +3,7 @@
 const program = require('commander')
 const chalk = require('chalk')
 const minimist = require('minimist')
+const leven = require('leven')
 
 program
   .name('qt')
