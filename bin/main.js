@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander')
-const chalk = require('chalk')
+const pico = require('picocolors')
 const minimist = require('minimist')
 const leven = require('leven')
 
@@ -20,7 +20,7 @@ program
   .option('-m, --merge', 'merge target directory if it exists')
   .action((name, cmd) => {
     if (minimist(process.argv.slice(3))._.length > 1) {
-      console.log(chalk.yellow('\n Info: You provided more than one argument. The first one will be used as the app\'s name, the rest are ignored.'))
+      console.log(pico.yellow('\n Info: You provided more than one argument. The first one will be used as the app\'s name, the rest are ignored.'))
     }
 
     require('../lib/create')(name, cleanArgs(cmd))
@@ -42,7 +42,7 @@ program
   .arguments('<command>')
   .action((cmd) => {
     program.outputHelp()
-    console.log(`  ` + chalk.red(`Unknown command ${chalk.yellow(cmd)}.`))
+    console.log(`  ` + pico.red(`Unknown command ${pico.yellow(cmd)}.`))
     console.log()
     suggestCommands(cmd)
   })
@@ -50,7 +50,7 @@ program
 // add some useful info on help
 program.on('--help', () => {
   console.log()
-  console.log(`  Run ${chalk.cyan(`qt <command> --help`)} for detailed usage of given command.`)
+  console.log(`  Run ${pico.cyan(`qt <command> --help`)} for detailed usage of given command.`)
   console.log()
 })
 
@@ -73,7 +73,7 @@ function suggestCommands (unknownCommand) {
   })
 
   if (suggestion) {
-    console.log(`  ` + chalk.red(`Did you mean ${chalk.yellow(suggestion)}?`))
+    console.log(`  ` + pico.red(`Did you mean ${pico.yellow(suggestion)}?`))
   }
 }
 
