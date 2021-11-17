@@ -36,7 +36,7 @@ qt create <project-name> -r <repository-name>
 ```
 qt repo -a <name> <address>
 ```  
-eg: `qt repo -a vue-template https://github.com/yogurtq/vue-template.git`  
+eg: `qt repo -a vue-template https://github.com/YornQiu/vue-template.git`  
 
 
 + 删除仓库  
@@ -52,5 +52,5 @@ qt repo -u <name> <address>
 ```
 
 
-### [Github地址](https://github.com/yogurtq/q-temp)
+### [Github地址](https://github.com/YornQiu/q-temp)
 

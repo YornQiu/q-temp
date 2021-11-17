@@ -1,8 +1,8 @@
 {
   "name": "q-temp",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Pull a template project into local via GIT",
-  "author": "YogurtQ",
+  "author": "YornQiu",
   "license": "MIT",
   "bin": {
     "qt": "./bin/main.js"
@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yogurtq/q-temp.git",
+    "url": "git+https://github.com/YornQiu/q-temp.git",
     "directory": "packages/q-temp"
   },
   "bugs": {
-    "url": "https://github.com/yogurtq/q-temp/issues"
+    "url": "https://github.com/YornQiu/q-temp/issues"
   }
 }
