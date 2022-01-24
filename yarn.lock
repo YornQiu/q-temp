@@ -376,10 +376,10 @@ path-parse@^1.0.6:
   resolved "https://registry.npm.taobao.org/path-parse/download/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha1-1i27VnlAXXLEc37FhgDp3c8G0kw=
 
-picocolors@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.npmmirror.com/picocolors/download/picocolors-0.2.1.tgz#570670f793646851d1ba135996962abad587859f"
-  integrity sha1-VwZw95NkaFHRuhNZlpYqutWHhZ8=
+picocolors@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmmirror.com/picocolors/download/picocolors-1.0.0.tgz?cache=0&sync_timestamp=1634093442271&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fpicocolors%2Fdownload%2Fpicocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
+  integrity sha1-y1vcdP8/UYkiNur3nWi8RFZKuBw=
 
 rechoir@^0.6.2:
   version "0.6.2"
